@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100">
+
+  <!-- Main Container with Background Image -->
+  <div class="bg-orange-400 min-h-screen bg-center bg-cover bg-fixed px-8 py-2 relative">
+    <!-- Navbar -->
+    <nav class="bg-transparent border-gray-200 ">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3">
+            <img src="./photos/logo.png" class="h-10" alt="Logo" />
+            <span class="self-center text-4xl font-semibold text-white">Swiggy</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-5 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+            <li>
+              <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-white md:hover:text-red-600 md:p-0 mr-5 hover:underline">swiggy Corporate</a>
+            </li>
+            <li>
+              <a href="#about" class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-600 md:p-0 mr-5 hover:underline">Partner with us</a>
+            </li>
+            <li>
+              <a href="#about" class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 border border-gray-500">Get the app</a>
+            </li>
+            <li>
+              <a href="#about" class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-red-700 border border-gray-500">Sign in</a>
+
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Sections -->
+    <div id="content" class="text-center mt-20">
+        <h1 class="text-5xl font-bold text-white">Order food & groceries. Discover <br> best restaurants. Swiggy it!</h1>
+        <input type="text" class="mt-8 mx-4 w-[250px] h-10" placeholder="Enter Your Delivery Location">
+        <input type="text" class=" mt-8 mx-2 w-[250px] h-10" placeholder="Enter Your Delivery Location">
+      <img class=" w-full xl:w-1/3 xl:absolute bottom-60 left-0 " src="./photos/vege.png" alt="">
+      <img class=" w-full xl:w-1/4 xl:absolute bottom-60 right-0 " src="./photos/sushi.png" alt="">
+      <div class="flex flex-wrap justify-center gap-6 mt-[100px]">
+        <div class="w-[250px] h-[250px] bg-zinc-50 rounded-lg">
+          <h1 class="pt-5 pr-[120px] text-black">FOOD DELIVERY</h1>
+          <h2 class=" pr-[80px] text-gray-500">FROM RESTAURANTS</h2>
+          <button class="bg-transparent text-red-500 font-bold py-2 px-4  mt-[0px] w-[180px] rounded border border-red-500 hover:bg-red-500 hover:text-white">
+            UP TO 60% OFF
+          </button>
+          <img class="w-[100px] xl:w-1/6 xl:absolute bottom-0 left-[300px]" src="./photos/sushi.png" alt="">
+
+        </div>
+        <div class="w-[250px] h-[250px] bg-zinc-50 rounded-lg">
+          <h1 class="pt-5 pr-[150px]">DINEOUT</h1>
+          <h2 class=" pr-[50px] text-gray-500">EAT OUT& SAVE MORE</h2>
+          <button class="bg-transparent text-red-500 font-bold py-2 px-4  mt-[0px] w-[180px] rounded border border-red-500 hover:bg-red-500 hover:text-white">
+            UP TO 60% OFF
+          </button>
+          <img class="w-[100px] xl:w-1/6 xl:absolute bottom-0 left-[580px]" src="./photos/sushi.png" alt="">
+        </div>
+        <div class="w-[250px] h-[250px] bg-zinc-50 rounded-lg">
+          <h1 class="pt-5 pr-[180px] text-black">GENIE</h1>
+          <h2 class=" pr-[100px] text-gray-500">PICK UP & MORE</h2>
+          <button class="bg-transparent text-red-500 font-bold py-2 px-4  mt-[0px] w-[180px] rounded border border-red-500 hover:bg-red-500 hover:text-white">
+            UP TO 60% OFF
+          </button>
+          <img class="w-[100px] xl:w-1/6 xl:absolute bottom-0 left-[850px]" src="./photos/sushi.png" alt="">
+
+
+        </div>
+      </div>
+            
+
+    </div>
+  </div>
+  <!-- About Section -->
+  <section id="about" class="bg-white py-16">
+      <div class="max-w-screen-xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold text-gray-900 pl-0 text-left">Order our best food options</h2>
+        <div class="flex flex-wrap justify-center gap-6 mt-[100px]">
+          <div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-gray-50 rounded-lg relative">
+            <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Pottichoru</h1>
+            
+            <img 
+                class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+                       absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+                       left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+                src="./photos/pottichoru-removebg-preview.png" 
+                alt="">
+        </div>
+        <div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+            <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Shavarma</h1>
+            
+            <img 
+                class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+                       absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+                       left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+                src="./photos/shavarma-removebg-preview.png" 
+                alt="">
+        </div>
+        <div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+          <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Burger</h1>
+          
+          <img 
+              class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[130px] 
+                     absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+                     left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+              src="./photos/20231204-SEA-VeganBurger-FredHardy-00-dbf603c78b694bfd99489b85ab44f4c4-removebg-preview.png" 
+              alt="">
+      </div>
+      <div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+        <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Biriyani</h1>
+        
+        <img 
+            class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+                   absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+                   left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+            src="./photos/Fourseason-FOUR-SEASON-SPECIAL-BIRYANI-removebg-preview.png" 
+            alt="">
+    </div>
+    <div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+      <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Pizza</h1>
+      
+      <img 
+          class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+                 absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+                 left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+          src="./photos/pizza1.jpeg" 
+          alt="">
+  </div>
+  <div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+    <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Chinese</h1>
+    
+    <img 
+        class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+               absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+               left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+        src="./photos/images (4).jpeg" 
+        alt="">
+</div>
+<div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+  <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Parotta</h1>
+  
+  <img 
+      class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+             absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+             left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+      src="./photos/wheat-parotta-removebg-preview.png" 
+      alt="">
+</div>
+<div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+  <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Rolls</h1>
+  
+  <img 
+      class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+             absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+             left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+      src="./photos/rolls-removebg-preview.png" 
+      alt="">
+</div>
+<div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+  <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Noodles</h1>
+  
+  <img 
+      class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+             absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+             left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+      src="./photos/noodles-removebg-preview.png" 
+      alt="">
+</div>
+<div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+  <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">PASTA</h1>
+  
+  <img 
+      class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+             absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+             left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+      src="./photos/pasta-removebg-preview.png" 
+      alt="">
+</div>
+<div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+  <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Dosa</h1>
+  
+  <img 
+      class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+             absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+             left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+      src="./photos/dhosha.jpeg" 
+      alt="">
+</div>
+<div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+  <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Paratha</h1>
+  
+  <img 
+      class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+             absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+             left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+      src="./photos/paratha-recipe-removebg-preview.png" 
+      alt="">
+</div>
+<div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+  <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Beef</h1>
+  
+  <img 
+      class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+             absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+             left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+      src="./photos/beef.jpeg" 
+      alt="">
+</div>
+<div class="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[250px] md:h-[250px] lg:w-[150px] lg:h-[150px] xl:w-[150px] xl:h-[150px] bg-zinc-50 rounded-lg relative">
+  <h1 class="pt-[100px] sm:pt-[60px] md:pt-[30px] lg:pt-[80px] xl:pt-[110px] pl-[10px] text-black text-sm sm:text-base   ">Meals</h1>
+  
+  <img 
+      class="w-[80px] sm:w-[100px] md:w-[120px] lg:w-[140px] xl:w-[100px] 
+             absolute top-[20px] sm:top-[35px] md:top-[40px] lg:top-[50px] xl:top-[10px] 
+             left-[10px] sm:left-[25px] md:left-[30px] lg:left-[40px] xl:left-[20px]" 
+      src="./photos/pottichoru-removebg-preview.png" 
+      alt="">
+</div>
+
+         
+         
+        </div>
+       
+      </div>
+  </section>
+
+  <!-- Products Section -->
+  <!-- Products Section -->
+<section id="products" class="bg-gray-100 py-16">
+  <div class="max-w-screen-xl mx-auto text-center px-4">
+    <h2 class="text-3xl font-bold text-gray-900 pl-0 text-left">Discover best restaurants on Dineout</h2>
+
+    
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+      <div class="relative group bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img class="w-full h-48 object-cover" src="./photos/food2.jpg" alt="Landscape Design">
+        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <h2 class="text-white text-xl font-semibold">Ruchi restaurants</h2>
+        </div>
+      </div>
+      
+      <div class="relative group bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img class="w-full h-48 object-cover" src="./photos/food3.jpeg" alt="Bathroom Remodelling">
+        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <h2 class="text-white text-xl font-semibold">MoonLight Restaurants</h2>
+        </div>
+      </div>
+      <div class="relative group bg-white shadow-md rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <img class="w-full h-48 object-cover" src="./photos/food4.webp" alt="Kitchen Remodelling">
+        <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <h2 class="text-white text-xl font-semibold">Jucie Restaurants</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Services Section -->
+  <!-- <section id="services" class="bg-black py-16">
+    <div class="max-w-screen-xl mx-auto text-center px-4">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center sm:justify-start sm:space-x-4">
+            <img src="./photos/logo.png" class="h-10 sm:h-12" alt="Logo" />
+            <h2 class="text-3xl font-bold text-orange-500 sm:mt-0 mt-4 text-left">Swiggy</h2>
+        </div>
+        <h2 class="text-3xl font-bold text-white mt-6 text-left">Get the Swiggy App now!</h2>
+        <p class="text-xl text-gray-600 mt-4 text-left">For best offers and discounts curated specially for you</p>
+        <div class="flex  sm:flex-row items-center sm:items-start sm:justify-end mt-10 space-y-4 sm:space-y-0 sm:space-x-4 xl:space-x-10 xl:justify-end">
+            <img class="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 2xl:w-64 object-cover" src="./photos/QR code.png" alt="QR Code">
+            <h6 class=" text-orange-500  ">
+              Download the app
+          </h6>      
+        </div>
+    </div>
+</section> -->
+<!-- <section id="services" class="bg-black py-16">
+  <div class="max-w-screen-xl mx-auto text-center px-4">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center sm:justify-start sm:space-x-4">
+          <img src="./photos/logo.png" class="h-10 sm:h-12" alt="Logo" />
+          <h2 class="text-3xl font-bold text-orange-500 sm:mt-0 mt-4 text-left">Swiggy</h2>
+      </div>
+      <h2 class="text-3xl font-bold text-white mt-6 text-left">Get the Swiggy App now!</h2>
+      <p class="text-xl text-gray-600 mt-4 text-left">For best offers and discounts curated specially for you</p>
+      <div class="flex flex-col sm:flex-row items-center sm:items-start sm:justify-end mt-10 space-y-4 sm:space-y-0 sm:space-x-4 xl:space-x-10">
+          <img class="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 2xl:w-64 object-cover" src="./photos/QR code.png" alt="QR Code">
+          <h6 class="text-xl text-orange-500 text-center sm:text-left sm:pl-4">
+              Download the app
+          </h6>      
+      </div>
+  </div>
+</section> -->
+<section id="services" class="bg-black py-16">
+  <div class="max-w-screen-xl mx-auto text-center px-4">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center sm:justify-start sm:space-x-4">
+          <img src="./photos/logo.png" class="h-10 sm:h-12" alt="Logo" />
+          <h2 class="text-3xl font-bold text-orange-500 sm:mt-0 mt-4 text-left">Swiggy</h2>
+      </div>
+      <h2 class="text-3xl font-bold text-white mt-6 text-left">Get the Swiggy App now!</h2>
+      <p class="text-xl text-gray-600 mt-4 text-left">For best offers and discounts curated specially for you</p>
+      <div class="flex ">
+          <img class="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-56 2xl:w-64 object-cover" src="./photos/QR code.png" alt="QR Code">
+          <!-- <h6 class="text-xl pt-[110px]  text-orange-500 text-center sm:text-left sm:pl-4">
+              Download the app
+          </h6>       -->
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+ 
+  <!-- Footer Section -->
+<section id="footer" class="bg-orange-500 py-12 text-white">
+  <div class="max-w-screen-xl mx-auto px-4">
+      <!-- Footer Content -->
+      <div class="flex flex-col md:flex-row md:justify-between items-center">
+          <!-- Call to Action -->
+          <div class="text-center md:text-left mb-8 md:mb-0">
+              <h2 class="text-2xl font-bold mb-4">Download the Swiggy App Now!</h2>
+              <p class="text-lg mb-4">Get the best offers and discounts curated specially for you.</p>
+              <div class="flex justify-center md:justify-start space-x-4">
+                  <!-- App Store Links -->
+                  <a href="#" class="flex items-center">
+                      <img src="./photos/app.jpeg" alt="App Store" class="h-10 md:h-12">
+                  </a>
+                  <a href="#" class="flex items-center">
+                      <img src="./photos/play.png" alt="Google Play" class="h-10 md:h-12">
+                  </a>
+              </div>
+          </div>
+          
+          <!-- Social Media Icons -->
+          <div class="flex justify-center md:justify-end space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                  <img src="./photos/fac.jpeg" alt="Facebook" class="h-8 md:h-10 rounded-lg">
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                  <img src="./photos/ins.jpeg" alt="Twitter" class="h-8 md:h-10 rounded-lg">
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                  <img src="./photos/twitter.png" alt="Instagram" class="h-8 md:h-10 rounded-lg">
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                  <img src="./photos/link.png" alt="LinkedIn" class="h-8 md:h-10">
+              </a>
+          </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="text-center mt-8">
+          <p class="text-black text-sm">© 2024 Swiggy. All rights reserved.</p>
+      </div>
+  </div>
+</section>
+
+
+  
+
+</body>
+</html>
